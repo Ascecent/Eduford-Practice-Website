@@ -1,0 +1,27 @@
+/*====================================
+=== PROJECT VARIABLES AND SETTINGS ===
+====================================*/
+
+/* Fonts imported from Google Fonts 
+Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap");
+
+/* Variables */
+:root {
+  /* Colors */
+  --white: #fff;
+  --red: #f44336;
+  --gray: #777;
+  --light-gray: #fff3f3;
+
+  /* Font */
+  --poppins: "Poppins", sans-serif;
+
+  /* Fonts weights */
+  --thin-w: 100;
+  --extra-light-w: 200;
+  --light-w: 300;
+  --regular-w: 400;
+  --semi-bold-w: 600;
+  --bold-w: 700;
+}

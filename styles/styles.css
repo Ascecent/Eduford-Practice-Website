@@ -1,0 +1,359 @@
+/* Settings import */
+@import url(settings.css);
+
+/* Font family setting */
+
+html {
+  font-family: var(--poppins);
+}
+
+/*===================
+=== OBJECT STYLES ===
+===================*/
+
+.main__section {
+  width: 85%;
+  margin: 8rem auto 0;
+  text-align: center;
+}
+
+.flex__items--container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+
+.primary-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--white);
+  border: 1px solid var(--white);
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
+  background: transparent;
+  transition: border 0.5s, background-color 0.5s;
+}
+
+.primary-btn:hover {
+  border: 1px solid var(--red);
+  background-color: var(--red);
+}
+
+.section__heading {
+  font-size: 2rem;
+  font-weight: var(--semi-bold-w);
+}
+
+.section__description {
+  color: var(--gray);
+  font-size: 0.9rem;
+  font-weight: var(--light-w);
+  line-height: 1.5;
+  padding: 0.8rem;
+}
+
+.item__heading {
+  font-weight: var(--semi-bold-w);
+  margin: 1rem 0;
+}
+
+.item__description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--gray);
+}
+
+/*===========================
+=== HEADER SECTION STYLES ===
+===========================*/
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(../images/banner.png);
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Navbar styles */
+
+.header__nav {
+  padding: 2% 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo--link {
+  width: 10rem;
+}
+
+.logo--link__image {
+  width: 100%;
+}
+
+.nav__list {
+  flex: 1;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.list__item {
+  padding: 1rem;
+}
+
+.list__item::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: var(--red);
+  display: block;
+  margin: auto;
+  transition: width 0.5s;
+}
+
+.list__item:hover::after {
+  width: 100%;
+}
+
+.item__link {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 0.8rem;
+}
+
+.header__btn {
+  display: none;
+}
+
+/* Banner text styles */
+
+.header__text {
+  width: 90%;
+  text-align: center;
+  color: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text__heading {
+  font-size: 4rem;
+}
+
+.text__description {
+  margin: 1rem 0 2.5rem;
+  font-size: 0.9rem;
+}
+
+/*=========================
+=== MAIN SECTION STYLES ===
+=========================*/
+
+/* Courses section styles */
+
+.items__course {
+  flex-basis: 31%;
+  max-width: 100%;
+  min-width: 15rem;
+  background: var(--light-gray);
+  border-radius: 0.9rem;
+  margin: 0 auto 5%;
+  transition: box-shadow 0.5s;
+}
+
+.items__course:hover {
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.course__image {
+  border-radius: 0.9rem 0.9rem 0 0;
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+
+.course__description {
+  padding: 0 2rem 2rem;
+  text-align: center;
+}
+
+/* Campus section styles */
+
+.items__campus {
+  flex-basis: 32%;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.campus__image {
+  width: 100%;
+  display: block;
+}
+
+.campus__layer {
+  padding-top: 1rem;
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background 0.5s, color 0.5s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.campus__layer:hover {
+  background: rgba(226, 0, 0, 0.6);
+}
+
+.layer__heading {
+  width: 100%;
+  color: var(--white);
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  transition: bottom 0.5s, opacity 0.5s;
+}
+
+.campus__layer:hover .layer__heading {
+  bottom: 50%;
+  opacity: 1;
+}
+
+/* Facilities section styles */
+
+.items__facilitie {
+  flex-basis: 31%;
+  border-radius: 0.9rem;
+  margin-bottom: 5%;
+  text-align: left;
+}
+
+.facilitie__image {
+  width: 100%;
+  border-radius: 0.9rem;
+}
+
+/* Testimonials section styles */
+
+.items__testimonial--user {
+  flex-basis: 44%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  background: var(--light-gray);
+  padding: 1.5rem;
+  cursor: pointer;
+  display: flex;
+}
+
+.testimonial--user__image {
+  height: 3rem;
+  margin-right: 2rem;
+  border-radius: 50%;
+}
+
+.information__review {
+  color: var(--red);
+}
+
+/* Call to action section styles */
+
+.main__cta {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/banner2.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.9rem;
+  padding: 8rem 0;
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+.cta__heading {
+  margin-bottom: 3rem;
+}
+
+/*===========================
+=== FOOTER SECTION STYLES ===
+===========================*/
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.footer__social-media {
+  margin: 1.5rem 0;
+}
+
+.social-media__link {
+  display: inline-block;
+  margin: 1rem;
+  color: var(--red);
+  font-size: 1.5rem;
+}
+
+.fa-heart {
+  color: var(--red);
+}
+
+/*==========================
+=== MEDIA QUERIES STYLES ===
+==========================*/
+
+@media screen and (max-width: 700px) {
+  /* Header responsive styles  begin*/
+
+  .text__heading {
+    font-size: 1.5rem;
+  }
+
+  .nav__links {
+    position: absolute;
+    background: var(--red);
+    height: 100vh;
+    width: 15rem;
+    top: 0;
+    right: -15rem;
+    text-align: left;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .header__btn {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: var(--white);
+    margin: 1rem;
+    cursor: pointer;
+  }
+
+  /* Header responsive styles  end*/
+
+  .flex__items--container {
+    flex-direction: column;
+  }
+
+  /* Cta responsive styles */
+
+  .cta__heading {
+    font-size: 1.5rem;
+  }
+}

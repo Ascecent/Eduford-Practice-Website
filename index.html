@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website Design | Eduford</title>
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <!-- Normalize styles -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+
+    <!-- Font Awesome icons -->
+    <script
+      src="https://kit.fontawesome.com/1fe61f0d4e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- HEADER SECTION BEGIN -->
+    <header class="header">
+      <!-- NAVBAR BEGIN -->
+      <nav class="header__nav">
+        <!-- Logo image -->
+        <a href="index.html" class="nav__logo--link">
+          <img
+            src="images/logo.png"
+            alt="Enterprise Logo"
+            class="logo--link__image"
+          />
+        </a>
+
+        <!-- Links list -->
+        <div class="nav__links" id="navLinks">
+          <!-- Close menu button -->
+          <div class="header__btn btn--close" onclick="closeMenu()">
+            <span class="fas fa-times"></span>
+          </div>
+
+          <!-- Item list begin -->
+          <ul class="nav__list">
+            <li class="list__item">
+              <a href="" class="item__link">HOME</a>
+            </li>
+            <li class="list__item">
+              <a href="" class="item__link">ABOUT</a>
+            </li>
+            <li class="list__item">
+              <a href="" class="item__link">COURSE</a>
+            </li>
+            <li class="list__item">
+              <a href="" class="item__link">BLOG</a>
+            </li>
+            <li class="list__item">
+              <a href="" class="item__link">CONTACT</a>
+            </li>
+          </ul>
+          <!-- Item list end -->
+        </div>
+
+        <!-- Open menu button -->
+        <div class="header__btn btn--open" onclick="openMenu()">
+          <span class="fas fa-bars"></span>
+        </div>
+      </nav>
+      <!-- NAVBAR END -->
+
+      <!-- BANNER TEXT SECTION BEGIN -->
+      <div class="header__text">
+        <h1 class="text__heading">World's Biggest University</h1>
+        <p class="text__description">
+          Making websites is now of the easiest things in thew world. You just
+          need yo learn HTML, CSS, Javascript and your are good to go.
+        </p>
+        <a href="#" class="text__link--visitus primary-btn"
+          >Visit Us to know More</a
+        >
+      </div>
+      <!-- BANNER TEXT SECTION BEGIN -->
+    </header>
+    <!-- HEADER SECTION END -->
+
+    <!-- MAIN SECTION BEGIN -->
+    <main class="main">
+      <!-- Course section -->
+      <section class="main__courses main__section">
+        <h2 class="courses__heading section__heading">Courses we Offer</h2>
+        <p class="courses__description section__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+
+        <!-- Courses content -->
+        <div class="courses__items flex__items--container">
+          <!-- Course #1 -->
+          <article class="items__course">
+            <img
+              src="images/high-school.jpg"
+              alt="High School Library"
+              class="course__image"
+            />
+            <h3 class="course__heading item__heading">Intermediate</h3>
+            <p class="course__description item__description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
+              velit dolor voluptatum, reiciendis hic tempore quis accusantium
+              nihil libero accusamus rem aspernatur dolorum minima.
+            </p>
+          </article>
+
+          <!-- Course #2 -->
+          <article class="items__course">
+            <img
+              src="images/pre-grade.jpg"
+              alt="Pre grade graduation"
+              class="course__image"
+            />
+            <h3 class="course__heading item__heading">Degree</h3>
+            <p class="course__description item__description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
+              velit dolor voluptatum, reiciendis hic tempore quis accusantium
+              nihil libero accusamus rem aspernatur dolorum minima.
+            </p>
+          </article>
+
+          <!-- Course #3 -->
+          <article class="items__course">
+            <img
+              src="images/post-grade.jpg"
+              alt="Post grade University"
+              class="course__image"
+            />
+            <h3 class="course__heading item__heading">Post Graduation</h3>
+            <p class="course__description item__description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
+              velit dolor voluptatum, reiciendis hic tempore quis accusantium
+              nihil libero accusamus rem aspernatur dolorum minima.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Campus section -->
+      <section class="main__campus main__section">
+        <h2 class="campus__heading section__heading">Our Global Campus</h2>
+        <p class="campus__description section__description">
+          Lorem ipsup dolor sit amet, consectetur adipisicing elit.
+        </p>
+
+        <!-- Campus items -->
+        <div class="campus__items flex__items--container">
+          <!-- London Campus -->
+          <article class="items__campus">
+            <img
+              class="campus__image"
+              src="images/london.png"
+              alt="London Campus"
+            />
+            <div class="campus__layer">
+              <h3 class="layer__heading">LONDON</h3>
+            </div>
+          </article>
+
+          <!-- New York Campus -->
+          <article class="items__campus">
+            <img
+              class="campus__image"
+              src="images/newyork.png"
+              alt="London Campus"
+            />
+            <div class="campus__layer">
+              <h3 class="layer__heading">NEW YORK</h3>
+            </div>
+          </article>
+
+          <!-- Washington Campus -->
+          <article class="items__campus">
+            <img
+              class="campus__image"
+              src="images/washington.png"
+              alt="London Campus"
+            />
+            <div class="campus__layer">
+              <h3 class="layer__heading">WASHINGTON</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Facilities section -->
+      <section class="main__facilities main__section">
+        <h2 class="facilities__heading section__heading">Our Facilities</h2>
+        <p class="facilities__description section__description">
+          Lorem ipsup dolor sit amet, consectetur adipisicing elit.
+        </p>
+
+        <div class="facilites__items flex__items--container">
+          <!-- Library facilitie -->
+          <article class="items__facilitie">
+            <img
+              class="facilitie__image"
+              src="images/library.png"
+              alt="Library image"
+            />
+            <h3 class="facilitie__heading item__heading">
+              World Class Library
+            </h3>
+            <p class="facilitie__description item__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Pellentesque aliquet turpis nulla.
+            </p>
+          </article>
+
+          <!-- Playground Facilitie -->
+          <article class="items__facilitie">
+            <img
+              class="facilitie__image"
+              src="images/basketball.png"
+              alt="Library image"
+            />
+            <h3 class="facilitie__heading item__heading">Playground</h3>
+            <p class="facilitie__description item__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Pellentesque aliquet turpis nulla.
+            </p>
+          </article>
+
+          <!-- Healthy food Facilitie -->
+          <article class="items__facilitie">
+            <img
+              class="facilitie__image"
+              src="images/cafeteria.png"
+              alt="Library image"
+            />
+            <h3 class="facilitie__heading item__heading">
+              Tasty and Healthy Food
+            </h3>
+            <p class="facilitie__description item__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Pellentesque aliquet turpis nulla.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Testimonials section -->
+      <section class="main__testimonials main__section">
+        <h2 class="testimonials__heading section__heading">
+          What Our Students Says
+        </h2>
+        <p class="testimonials_description section__description">
+          Lorem ipsup dolor sit amet, consectetur adipisicing elit.
+        </p>
+
+        <div class="testimonials__items flex__items--container">
+          <!-- User #1 -->
+          <article class="items__testimonial--user">
+            <img
+              src="images/user1.jpg"
+              alt="Person Picture"
+              class="testimonial--user__image"
+            />
+            <div class="testimonial--user__information">
+              <p class="information__description item__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem, consectetur sed sequi, natus odio repudiandae
+                amet beatae officiis perferendis nemo optio.
+              </p>
+              <h3 class="information__name item__heading">Christine Berkley</h3>
+              <div class="information__review">
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="far fa-star"></span>
+              </div>
+            </div>
+          </article>
+
+          <!-- User #2 -->
+          <article class="items__testimonial--user">
+            <img
+              src="images/user2.jpg"
+              alt="Person Picture"
+              class="testimonial--user__image"
+            />
+            <div class="testimonial--user__information">
+              <p class="information__description item__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem, consectetur sed sequi, natus odio repudiandae
+                amet beatae officiis perferendis nemo optio.
+              </p>
+              <h3 class="information__name item__heading">David Byer</h3>
+              <div class="information__review">
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star-half-alt"></span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Call to Action Section -->
+      <section class="main__cta main__section">
+        <h2 class="cta__heading section__heading">
+          Enroll For Our Various Online Courses <br />
+          Anywhere From The World
+        </h2>
+        <a href="#" class="cta__contact-us primary-btn">CONTACT US</a>
+      </section>
+    </main>
+    <!-- MAIN SECTION END -->
+
+    <!-- FOOTER SECTION BEGIN -->
+    <footer class="footer">
+      <h4 class="footer__heading item__heading">About Us</h4>
+      <p class="footer__description item__description">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, quae.
+        Beatae ullam expedita, fuga soluta.
+      </p>
+
+      <div class="footer__social-media">
+        <a target="_blank" class="social-media__link" href="https://www.facebook.com">
+          <span class="fab fa-facebook"></span>
+        </a>
+        <a target="_blank" class="social-media__link" href="https://www.twitter.com">
+          <span class="fab fa-twitter"></span>
+        </a>
+        <a target="_blank" class="social-media__link" href="https://www.linkedin.com">
+          <span class="fab fa-linkedin"></span>
+        </a>
+        <a target="_blank" class="social-media__link" href="https://www.instagram.com">
+          <span class="fab fa-instagram"></span>
+        </a>
+      </div>
+
+      <p class="footer__copyright">
+        Made with <span class="fas fa-heart"></span> by Ivan Holguin
+      </p>
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+    <!-- Menu funcionality archive -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
