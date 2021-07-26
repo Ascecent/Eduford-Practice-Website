@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eduford University | Home</title>
 
+    <!-- Project variables -->
+    <link rel="stylesheet" href="../styles/general/settings.css" />
+
     <!-- Normalize styles -->
-    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/general/normalize.css" />
 
     <!-- Objects styles -->
-    <link rel="stylesheet" href="../styles/objects.css" />
+    <link rel="stylesheet" href="../styles/general/objects.css" />
 
     <!-- Page styles -->
-    <link rel="stylesheet" href="../styles/about-us.css" />
+    <link rel="stylesheet" href="../styles/pages/about-us.css" />
 
     <!-- Font Awesome icons -->
     <script
@@ -78,11 +81,22 @@
       </nav>
       <!-- NAVBAR END -->
 
-      <h1 class="header__heading">About Us</h1>
+      <h1 class="header__heading header__heading--position">About Us</h1>
+
+      <!-- Scroll down button -->
+      <div onclick="slowDownScroll()" class="scroll-btn__scroll-down">
+        <div class="scroll-down__mouse flex-scroll-btn">
+          <span class="inside-scroll-content"></span>
+        </div>
+
+        <div class="scroll-down__arrow flex-scroll-btn">
+          <span class="inside-scroll-content"></span>
+        </div>
+      </div>
     </header>
     <!-- HEADER SECTION END -->
 
-    <main class="main">
+    <main class="main" id="main">
       <!-- About us section -->
       <section class="main__about-us main__section">
         <div class="about-us__items flex__items--container">
@@ -114,7 +128,7 @@
 
     <!-- FOOTER SECTION BEGIN -->
     <footer class="footer">
-      <h4 class="footer__heading item__heading">About Us</h4>
+      <h4 class="footer__heading item__heading">Eduford</h4>
       <p class="footer__description item__description">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, quae.
         Beatae ullam expedita, fuga soluta.

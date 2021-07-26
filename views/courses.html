@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eduford University | Home</title>
 
+    <!-- Project variables -->
+    <link rel="stylesheet" href="../styles/general/settings.css" />
+
     <!-- Normalize styles -->
-    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/general/normalize.css" />
 
     <!-- Objects styles -->
-    <link rel="stylesheet" href="../styles/objects.css" />
+    <link rel="stylesheet" href="../styles/general/objects.css" />
 
     <!-- Font Awesome icons -->
     <script
@@ -75,11 +78,22 @@
       </nav>
       <!-- NAVBAR END -->
 
-      <h1 class="header__heading">Our Courses</h1>
+      <h1 class="header__heading header__heading--position">Our Courses</h1>
+
+      <!-- Scroll down button -->
+      <div onclick="slowDownScroll()" class="scroll-btn__scroll-down">
+        <div class="scroll-down__mouse flex-scroll-btn">
+          <span class="inside-scroll-content"></span>
+        </div>
+
+        <div class="scroll-down__arrow flex-scroll-btn">
+          <span class="inside-scroll-content"></span>
+        </div>
+      </div>
     </header>
     <!-- HEADER SECTION END -->
 
-    <main class="main">
+    <main class="main" id="main">
       <section class="main__courses main__section">
         <h2 class="courses__heading section__heading">Courses we Offer</h2>
         <p class="courses__description section__description">
@@ -195,7 +209,7 @@
 
     <!-- FOOTER SECTION BEGIN -->
     <footer class="footer">
-      <h4 class="footer__heading item__heading">About Us</h4>
+      <h4 class="footer__heading item__heading">Eduford</h4>
       <p class="footer__description item__description">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, quae.
         Beatae ullam expedita, fuga soluta.

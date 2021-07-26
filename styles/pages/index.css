@@ -1,6 +1,3 @@
-/* Settings import */
-@import url(settings.css);
-
 /* Banner text styles */
 
 .header__text {
@@ -9,7 +6,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
 }
 
 .text__description {
@@ -93,13 +90,13 @@
 
 .main__cta {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../images/banner2.jpg);
+    url(../../images/banner2.jpg);
   background-position: center;
   background-size: cover;
   border-radius: 0.9rem;
-  padding: 8rem 0;
+  padding-bottom: 8rem;
+  margin-top: 8rem;
   color: var(--white);
-  margin-bottom: 2rem;
 }
 
 .cta__heading {

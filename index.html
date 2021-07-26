@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eduford University | Home</title>
 
+    <!-- Project variables -->
+    <link rel="stylesheet" href="../styles/general/settings.css" />
+
     <!-- Normalize styles -->
-    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/general/normalize.css" />
 
     <!-- Objects styles -->
-    <link rel="stylesheet" href="styles/objects.css" />
+    <link rel="stylesheet" href="../styles/general/objects.css" />
 
     <!-- Page styles -->
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/pages/index.css" />
 
     <!-- Font Awesome icons -->
     <script
@@ -75,21 +78,31 @@
 
       <!-- BANNER TEXT SECTION BEGIN -->
       <div class="header__text">
-        <h1 class="text__heading header__heading">World's Biggest University</h1>
+        <h1 class="text__heading header__heading">
+          World's Biggest University
+        </h1>
         <p class="text__description">
           Making websites is now of the easiest things in thew world. You just
           need yo learn HTML, CSS, Javascript and your are good to go.
         </p>
-        <a href="#" class="text__link--visitus primary-btn"
-          >Visit Us to know More</a
-        >
+      </div>
+
+      <!-- Scroll down button -->
+      <div onclick="slowDownScroll()" class="scroll-btn__scroll-down">
+        <div class="scroll-down__mouse flex-scroll-btn">
+          <span class="inside-scroll-content"></span>
+        </div>
+
+        <div class="scroll-down__arrow flex-scroll-btn">
+          <span class="inside-scroll-content"></span>
+        </div>
       </div>
       <!-- BANNER TEXT SECTION BEGIN -->
     </header>
     <!-- HEADER SECTION END -->
 
     <!-- MAIN SECTION BEGIN -->
-    <main class="main">
+    <main class="main" id="main">
       <!-- Course section -->
       <section class="main__courses main__section">
         <h2 class="courses__heading section__heading">Courses we Offer</h2>
@@ -143,6 +156,10 @@
               nihil libero accusamus rem aspernatur dolorum minima.
             </p>
           </article>
+
+          <a href="views/courses.html" class="primary-btn primary-btn--red">
+            KNOW MORE
+          </a>
         </div>
       </section>
 
@@ -247,6 +264,10 @@
             </p>
           </article>
         </div>
+
+        <a href="views/courses.html" class="primary-btn primary-btn--red">
+          KNOW MORE
+        </a>
       </section>
 
       <!-- Testimonials section -->
@@ -315,7 +336,9 @@
           Enroll For Our Various Online Courses <br />
           Anywhere From The World
         </h2>
-        <a href="#" class="cta__contact-us primary-btn">CONTACT US</a>
+        <a href="views/contact.html" class="cta__contact-us primary-btn"
+          >CONTACT US</a
+        >
       </section>
     </main>
     <!-- MAIN SECTION END -->

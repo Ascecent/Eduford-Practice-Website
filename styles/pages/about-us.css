@@ -1,15 +1,6 @@
-@import url(settings.css);
-
 /*===========================
 === HEADER CONTENT STYLES ===
 ===========================*/
-
-.header__heading {
-  position: absolute;
-  bottom: 2rem;
-  width: 100%;
-  text-align: center;
-}
 
 .main__about-us {
   margin-bottom: 8rem;
@@ -22,7 +13,7 @@
 }
 
 .about-us__heading {
-  font-size: clamp(1rem, 2.5vw, 4rem);
+  font-size: clamp(1.5rem, 3vw, 4rem);
 }
 
 .about-us__description {
