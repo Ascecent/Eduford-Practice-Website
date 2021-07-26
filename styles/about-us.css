@@ -1,0 +1,41 @@
+@import url(settings.css);
+
+/*===========================
+=== HEADER CONTENT STYLES ===
+===========================*/
+
+.header__heading {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.main__about-us {
+  margin-bottom: 8rem;
+}
+
+.items__about-us {
+  flex-basis: 48%;
+  padding: 2rem 1rem;
+  text-align: left;
+}
+
+.about-us__heading {
+  font-size: clamp(1rem, 2.5vw, 4rem);
+}
+
+.about-us__description {
+  margin-bottom: 1rem;
+}
+
+.about-us__image {
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .items__about-us {
+    text-align: center;
+  }
+  
+}

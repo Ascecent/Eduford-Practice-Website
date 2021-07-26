@@ -1,0 +1,74 @@
+/* Settings import */
+@import url(settings.css);
+
+/*=========================
+=== MAIN SECTION STYLES ===
+=========================*/
+
+/* Blog section styles */
+
+/* Left blog column */
+.item__blog--left {
+  flex-basis: 65%;
+  text-align: left;
+}
+
+.blog__image {
+  width: 100%;
+}
+
+.blog__heading {
+  margin-bottom: 2rem;
+}
+
+.blog__description:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.blog__comment-box {
+  border: 1px solid #ccc;
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+}
+
+.comment-box__heading {
+  margin: 1rem 0;
+}
+
+.form__input {
+  padding: 1rem;
+  width: 100%;
+  margin: 1rem 0;
+  border: none;
+  outline: none;
+  background: #f0f0f0;
+}
+
+.form__comment-input {
+  resize: none;
+}
+
+.form__button {
+  margin: 1rem 0;
+}
+
+/* Right blog column */
+.item__blog--right {
+  flex-basis: 32%;
+}
+
+.categories__heading {
+  background: var(--red);
+  color: var(--white);
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.categories__item {
+  color: var(--gray);
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}

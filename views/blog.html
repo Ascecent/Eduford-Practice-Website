@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eduford University | Home</title>
+
+    <!-- Normalize styles -->
+    <link rel="stylesheet" href="../styles/normalize.css" />
+
+    <!-- Objects styles -->
+    <link rel="stylesheet" href="../styles/objects.css" />
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="../styles/blog.css" />
+
+    <!-- Font Awesome icons -->
+    <script
+      src="https://kit.fontawesome.com/1fe61f0d4e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon.ico"
+    />
+  </head>
+  <body>
+    <!-- HEADER SECTION BEGIN -->
+    <header class="blog-header header__section">
+      <!-- NAVBAR BEGIN -->
+      <nav class="header__nav">
+        <!-- Logo image -->
+        <a href="../index.html" class="nav__logo--link">
+          <img
+            src="../images/logo.png"
+            alt="Enterprise Logo"
+            class="logo--link__image"
+          />
+        </a>
+
+        <!-- Links list -->
+        <div class="nav__links" id="navLinks">
+          <!-- Close menu button -->
+          <div class="header__btn btn--close" onclick="closeMenu()">
+            <span class="fas fa-times"></span>
+          </div>
+
+          <!-- Item list begin -->
+          <ul class="nav__list">
+            <li class="list__item">
+              <a href="../index.html" class="item__link">HOME</a>
+            </li>
+            <li class="list__item">
+              <a href="about.html" class="item__link">ABOUT</a>
+            </li>
+            <li class="list__item">
+              <a href="courses.html" class="item__link">COURSES</a>
+            </li>
+            <li class="list__item">
+              <a href="blog.html" class="item__link">BLOG</a>
+            </li>
+            <li class="list__item">
+              <a href="contact.html" class="item__link">CONTACT</a>
+            </li>
+          </ul>
+          <!-- Item list end -->
+        </div>
+
+        <!-- Open menu button -->
+        <div class="header__btn btn--open" onclick="openMenu()">
+          <span class="fas fa-bars"></span>
+        </div>
+      </nav>
+      <!-- NAVBAR END -->
+
+      <h1 class="header__heading">
+        Our Certificate & Online Programs
+      </h1>
+    </header>
+    <!-- HEADER SECTION END -->
+
+    <!-- MAIN SECTION BEGIN -->
+    <main class="main">
+      <section class="main__section main__blog">
+        <div class="blog__items flex__items--container">
+          <!-- Left column -->
+          <article class="items__blog item__blog--left">
+            <img
+              src="../images/certificate.jpg"
+              alt="Bachelor Certificate"
+              class="blog__image"
+            />
+            <h2 class="blog__heading item__heading">
+              Our Certificate & Online Programs For 2021
+            </h2>
+            <p class="blog__description item__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+              tempora architecto sit ducimus ad ex dolorem, libero, assumenda
+              consequatur saepe corrupti doloribus qui, cupiditate recusandae
+              alias! Laudantium nobis maxime nam.
+            </p>
+            <p class="blog__description item__description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              aliquid, maiores natus accusantium accusamus repellat perspiciatis
+              voluptate totam similique iure ad quidem consequatur, ipsam
+              necessitatibus error? Quo delectus debitis quasi. Ea cupiditate
+              rem voluptatem consequuntur eos numquam omnis pariatur fuga
+              officiis reiciendis! Repellendus saepe quis ducimus, a
+              reprehenderit dolor ratione veniam, necessitatibus sit optio
+              maxime eveniet quam omnis fuga eligendi! Saepe nemo architecto
+              ipsa omnis aliquam natus aperiam non esse autem et, velit id sequi
+              temporibus voluptatum iste error labore deserunt! Ut voluptas
+              aperiam saepe error, quo nobis nisi atque. Commodi ab perferendis
+              doloremque vitae distinctio ratione voluptates nisi numquam dicta
+              voluptatem reprehenderit, rerum sit possimus provident repellat
+              minus odio harum alias nostrum iste porro eveniet, fugit sunt
+              illum. Officia. Eveniet, repudiandae. Temporibus perferendis
+              pariatur reiciendis molestias consequatur similique debitis
+              repellendus quidem ut? Recusandae, cum earum quisquam quas vitae
+              dolore similique reiciendis? Mollitia molestiae, iste qui quod
+              tenetur possimus officia.
+            </p>
+            <p class="blog__description item__description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
+              debitis veritatis culpa earum placeat quisquam officiis ad
+              sapiente facilis. Blanditiis facilis ipsa, illo asperiores
+              voluptatem saepe libero tempore? Porro, illo!
+            </p>
+            <p class="blog__description item__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              vel veritatis asperiores! Nemo perferendis earum modi obcaecati
+              libero saepe possimus incidunt magni iusto cupiditate! Tempora
+              minima sapiente doloremque illum ipsa? Ut ex quidem est ducimus
+              officiis incidunt corporis sequi tempore dolores recusandae non
+              possimus dolor officia, iste eum necessitatibus, rerum nam
+              voluptate quos delectus, dolorum eveniet. Ipsam aliquam commodi
+              enim!
+            </p>
+
+            <div class="blog__comment-box">
+              <h3 class="comment-box__heading">Leave a Comment</h3>
+              <form class="comment-box__form">
+                <input
+                  type="text"
+                  class="form__input"
+                  placeholder="Enter Name"
+                />
+                <input
+                  type="email"
+                  class="form__input"
+                  placeholder="Enter Email"
+                />
+                <textarea
+                  placeholder="Your Comment"
+                  name="comment"
+                  rows="5"
+                  class="form__input form__comment-input"
+                ></textarea>
+                <button type="submit" class="form__button primary-btn primary-btn--red">POST COMMENT</buttont>
+              </form>
+            </div>
+          </article>
+
+          <!-- Right column -->
+          <article class="items__blog item__blog--right">
+            <h2 class="blog__heading categories__heading">Post Categories</h2>
+            <ul class="blog__categories--list">
+              <li class="categories__item">
+                <span class="item__name">Business Analitycs</span>
+                <span class="item__amount">23</span>
+              </li>
+              <li class="categories__item">
+                <span class="item__name">Machine Learning</span>
+                <span class="item__amount">54</span>
+              </li>
+              <li class="categories__item">
+                <span class="item__name">Data Science</span>
+                <span class="item__amount">12</span>
+              </li>
+              <li class="categories__item">
+                <span class="item__name">Computer Science</span>
+                <span class="item__amount">80</span>
+              </li>
+              <li class="categories__item">
+                <span class="item__name">AUTOCAD</span>
+                <span class="item__amount">35</span>
+              </li>
+              <li class="categories__item">
+                <span class="item__name">Engineering</span>
+                <span class="item__amount">40</span>
+              </li>
+              <li class="categories__item">
+                <span class="item__name">Web Development</span>
+                <span class="item__amount">25</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+    <!-- MAIN SECTION END -->
+
+    <!-- FOOTER SECTION BEGIN -->
+    <footer class="footer">
+      <h4 class="footer__heading item__heading">About Us</h4>
+      <p class="footer__description item__description">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, quae.
+        Beatae ullam expedita, fuga soluta.
+      </p>
+
+      <div class="footer__social-media">
+        <a
+          target="_blank"
+          class="social-media__link"
+          href="https://www.facebook.com"
+        >
+          <span class="fab fa-facebook"></span>
+        </a>
+        <a
+          target="_blank"
+          class="social-media__link"
+          href="https://www.twitter.com"
+        >
+          <span class="fab fa-twitter"></span>
+        </a>
+        <a
+          target="_blank"
+          class="social-media__link"
+          href="https://www.linkedin.com"
+        >
+          <span class="fab fa-linkedin"></span>
+        </a>
+        <a
+          target="_blank"
+          class="social-media__link"
+          href="https://www.instagram.com"
+        >
+          <span class="fab fa-instagram"></span>
+        </a>
+      </div>
+
+      <p class="footer__copyright">
+        Made with <span class="fas fa-heart"></span> by Ivan Holguin
+      </p>
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+    <!-- Menu funcionality archive -->
+    <script src="../js/app.js"></script>
+  </body>
+</html>

@@ -1,4 +1,3 @@
-/* Settings import */
 @import url(settings.css);
 
 /* Font family setting */
@@ -28,16 +27,28 @@ html {
   display: inline-block;
   text-decoration: none;
   color: var(--white);
-  border: 1px solid var(--white);
+  border: 1px solid currentColor;
   padding: 1rem 2rem;
   font-size: 0.9rem;
   background: transparent;
   transition: border 0.5s, background-color 0.5s;
+  cursor: pointer;
 }
 
 .primary-btn:hover {
   border: 1px solid var(--red);
   background-color: var(--red);
+}
+
+/* Primary button red variation */
+.primary-btn--red {
+  color: var(--red);
+  border: 1px solid currentColor;
+  transition: border 0.5s, background-color 0.5s, color 0.5s;
+}
+
+.primary-btn--red:hover {
+  color: var(--white);
 }
 
 .section__heading {
@@ -68,15 +79,43 @@ html {
 === HEADER SECTION STYLES ===
 ===========================*/
 
-.header {
-  min-height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(../images/banner.png);
+.header__section {
   background-position: center;
   background-size: cover;
-  overflow-x: hidden;
   position: relative;
+  width: 100%;
+  height: 100vh;
+  color: var(--white);
+}
+
+/* Home page header */
+
+.home-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/banner.png);
+}
+
+/* About Us page header */
+.about-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/about.jpg);
+}
+
+/* Courses page header */
+.courses-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/courses.jpg);
+}
+
+.blog-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/blog-bg.jpg);
+}
+
+/* Contact Us page header */
+.contact-us-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/contact-us.jpg);
 }
 
 /* Navbar styles */
@@ -131,32 +170,26 @@ html {
   display: none;
 }
 
-/* Banner text styles */
-
-.header__text {
-  width: 90%;
-  text-align: center;
-  color: var(--white);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.text__heading {
-  font-size: 4rem;
-}
-
-.text__description {
-  margin: 1rem 0 2.5rem;
-  font-size: 0.9rem;
+.header__heading {
+  font-size: clamp(2rem, 5vw, 4rem);
 }
 
 /*=========================
 === MAIN SECTION STYLES ===
 =========================*/
 
-/* Courses section styles */
+/* Course section styles */
+
+.course__image {
+  border-radius: 0.9rem 0.9rem 0 0;
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+
+.course__description {
+  padding: 0 2rem 2rem;
+}
 
 .items__course {
   flex-basis: 31%;
@@ -172,64 +205,7 @@ html {
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
 }
 
-.course__image {
-  border-radius: 0.9rem 0.9rem 0 0;
-  width: 100%;
-  height: 15rem;
-  object-fit: cover;
-}
-
-.course__description {
-  padding: 0 2rem 2rem;
-  text-align: center;
-}
-
-/* Campus section styles */
-
-.items__campus {
-  flex-basis: 32%;
-  border-radius: 1rem;
-  margin-bottom: 2rem;
-  overflow: hidden;
-  position: relative;
-}
-
-.campus__image {
-  width: 100%;
-  display: block;
-}
-
-.campus__layer {
-  padding-top: 1rem;
-  background: transparent;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: background 0.5s, color 0.5s;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.campus__layer:hover {
-  background: rgba(226, 0, 0, 0.6);
-}
-
-.layer__heading {
-  width: 100%;
-  color: var(--white);
-  position: absolute;
-  bottom: 0;
-  opacity: 0;
-  transition: bottom 0.5s, opacity 0.5s;
-}
-
-.campus__layer:hover .layer__heading {
-  bottom: 50%;
-  opacity: 1;
-}
-
-/* Facilities section styles */
+/* Facilities section stlyes */
 
 .items__facilitie {
   flex-basis: 31%;
@@ -243,51 +219,13 @@ html {
   border-radius: 0.9rem;
 }
 
-/* Testimonials section styles */
-
-.items__testimonial--user {
-  flex-basis: 44%;
-  border-radius: 1rem;
-  margin-bottom: 1rem;
-  text-align: left;
-  background: var(--light-gray);
-  padding: 1.5rem;
-  cursor: pointer;
-  display: flex;
-}
-
-.testimonial--user__image {
-  height: 3rem;
-  margin-right: 2rem;
-  border-radius: 50%;
-}
-
-.information__review {
-  color: var(--red);
-}
-
-/* Call to action section styles */
-
-.main__cta {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../images/banner2.jpg);
-  background-position: center;
-  background-size: cover;
-  border-radius: 0.9rem;
-  padding: 8rem 0;
-  color: var(--white);
-  margin-bottom: 2rem;
-}
-
-.cta__heading {
-  margin-bottom: 3rem;
-}
-
 /*===========================
 === FOOTER SECTION STYLES ===
 ===========================*/
 
 .footer {
+  border-top: 1px solid lightgray;
+  margin-top: 3rem;
   width: 100%;
   text-align: center;
   padding: 2rem 0;
@@ -315,12 +253,8 @@ html {
 @media screen and (max-width: 700px) {
   /* Header responsive styles  begin*/
 
-  .text__heading {
-    font-size: 1.5rem;
-  }
-
   .nav__links {
-    position: absolute;
+    position: fixed;
     background: var(--red);
     height: 100vh;
     width: 15rem;

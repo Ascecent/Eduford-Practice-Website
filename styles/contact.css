@@ -1,0 +1,58 @@
+/* Settings import */
+@import url(settings.css);
+
+/*=========================
+=== MAIN SECTION STYLES ===
+=========================*/
+
+/* Contact sections styles */
+
+.location__map {
+  width: 100%;
+  border: none;
+  height: 40rem;
+  margin-top: 4rem;
+  border-radius: .5rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+}
+
+.items__contact {
+  flex-basis: 48%;
+  margin-bottom: 2rem;
+}
+
+.contact__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  text-align: left;
+  border-radius: 1rem;
+  background: var(--light-gray);
+  padding: 2rem .5rem;
+}
+
+.information__heading {
+  font-size: 1.5rem;
+  font-weight: var(--regular-w);
+  margin: 0 0 1rem;
+}
+
+.item__icon {
+  margin: 0.8rem 1.5rem 0.8rem 0.8rem;
+  font-size: 1.5rem;
+  color: var(--red);
+}
+
+/* Contact form */
+
+.form__input {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+.form__comment {
+  resize: none;
+}

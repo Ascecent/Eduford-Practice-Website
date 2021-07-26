@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eduford University | Home</title>
+
+    <!-- Normalize styles -->
+    <link rel="stylesheet" href="../styles/normalize.css" />
+
+    <!-- Objects styles -->
+    <link rel="stylesheet" href="../styles/objects.css" />
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="../styles/contact.css" />
+
+    <!-- Font Awesome icons -->
+    <script
+      src="https://kit.fontawesome.com/1fe61f0d4e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon.ico"
+    />
+  </head>
+  <body>
+    <!-- HEADER SECTION BEGIN -->
+    <header class="contact-us-header header__section">
+      <!-- NAVBAR BEGIN -->
+      <nav class="header__nav">
+        <!-- Logo image -->
+        <a href="../index.html" class="nav__logo--link">
+          <img
+            src="../images/logo.png"
+            alt="Enterprise Logo"
+            class="logo--link__image"
+          />
+        </a>
+
+        <!-- Links list -->
+        <div class="nav__links" id="navLinks">
+          <!-- Close menu button -->
+          <div class="header__btn btn--close" onclick="closeMenu()">
+            <span class="fas fa-times"></span>
+          </div>
+
+          <!-- Item list begin -->
+          <ul class="nav__list">
+            <li class="list__item">
+              <a href="../index.html" class="item__link">HOME</a>
+            </li>
+            <li class="list__item">
+              <a href="about.html" class="item__link">ABOUT</a>
+            </li>
+            <li class="list__item">
+              <a href="courses.html" class="item__link">COURSES</a>
+            </li>
+            <li class="list__item">
+              <a href="blog.html" class="item__link">BLOG</a>
+            </li>
+            <li class="list__item">
+              <a href="contact.html" class="item__link">CONTACT</a>
+            </li>
+          </ul>
+          <!-- Item list end -->
+        </div>
+
+        <!-- Open menu button -->
+        <div class="header__btn btn--open" onclick="openMenu()">
+          <span class="fas fa-bars"></span>
+        </div>
+      </nav>
+      <!-- NAVBAR END -->
+
+      <h1 class="header__heading">Contact Us</h1>
+    </header>
+    <!-- HEADER SECTION END -->
+
+    <main class="main">
+      <!-- Location us section -->
+      <section class="main__location main__section">
+        <h2 class="section__heading">Locate Us</h2>
+        <iframe
+          class="location__map"
+          title="location__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30608961085!2d-74.25987646429546!3d40.69714939277638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva%20York%2C%20EE.%20UU.!5e0!3m2!1ses!2sco!4v1627262247243!5m2!1ses!2sco"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </section>
+
+      <!-- Contact us section  -->
+      <section class="main__contact main__section">
+        <h2 class="section__heading">Contact Us</h2>
+        <div class="contact__items flex__items--container">
+          <div class="items__contact">
+            <!-- Address item -->
+            <article class="contact__item">
+              <span class="item__icon fas fa-home"></span>
+              <span class="item__information">
+                <h3 class="information__heading item__heading">
+                  XYZ Road, ABC Building
+                </h3>
+                <p class="information__description item__description">
+                  New York, USA
+                </p>
+              </span>
+            </article>
+
+            <!-- Tel item -->
+            <article class="contact__item">
+              <span class="item__icon fas fa-phone"></span>
+              <span class="item__information">
+                <h2 class="information__heading item__heading">+1 00102351</h2>
+                <p class="information__description item__description">
+                  Monday to Saturday, 10AM to 6PM
+                </p>
+              </span>
+            </article>
+
+            <!-- Email item -->
+            <article class="contact__item">
+              <span class="item__icon fas fa-envelope-open"></span>
+              <span class="item__information">
+                <h2 class="information__heading item__heading">
+                  info@gmail.com
+                </h2>
+                <p class="information__description item__description">
+                  Email us your q uery
+                </p>
+              </span>
+            </article>
+          </div>
+
+          <div class="items__contact">
+            <form
+              action="../php/form-handler.php"  
+              method="POST"
+              class="contact__form"
+            >
+              <input
+                name="name"
+                type="text"
+                class="form__input"
+                placeholder="Enter your Name"
+                required
+              />
+              <input
+                name="email"
+                type="email"
+                class="form__input"
+                placeholder="Enter your Email Address"
+                required
+              />
+              <input
+                name="subject"
+                type="text"
+                class="form__input"
+                placeholder="Enter your Subject"
+                required
+              />
+              <textarea
+                name="message"
+                rows="8"
+                class="form__input form__comment"
+                placeholder="Enter your message"
+                required
+              ></textarea>
+              <button
+                type="submit"
+                class="form__button primary-btn primary-btn--red"
+              >
+                SEND MESSAGE
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER SECTION BEGIN -->
+    <footer class="footer">
+      <h4 class="footer__heading item__heading">About Us</h4>
+      <p class="footer__description item__description">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, quae.
+        Beatae ullam expedita, fuga soluta.
+      </p>
+
+      <div class="footer__social-media">
+        <a
+          target="_blank"
+          class="social-media__link"
+          href="https://www.facebook.com"
+        >
+          <span class="fab fa-facebook"></span>
+        </a>
+        <a
+          target="_blank"
+          class="social-media__link"
+          href="https://www.twitter.com"
+        >
+          <span class="fab fa-twitter"></span>
+        </a>
+        <a
+          target="_blank"
+          class="social-media__link"
+          href="https://www.linkedin.com"
+        >
+          <span class="fab fa-linkedin"></span>
+        </a>
+        <a
+          target="_blank"
+          class="social-media__link"
+          href="https://www.instagram.com"
+        >
+          <span class="fab fa-instagram"></span>
+        </a>
+      </div>
+
+      <p class="footer__copyright">
+        Made with <span class="fas fa-heart"></span> by Ivan Holguin
+      </p>
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+    <!-- Menu funcionality archive -->
+    <script src="../js/app.js"></script>
+  </body>
+</html>

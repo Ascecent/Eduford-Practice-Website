@@ -1,0 +1,107 @@
+/* Settings import */
+@import url(settings.css);
+
+/* Banner text styles */
+
+.header__text {
+  width: 90%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text__description {
+  margin: 1rem 0 2.5rem;
+  font-size: 0.9rem;
+}
+
+/*=========================
+=== MAIN SECTION STYLES ===
+=========================*/
+
+/* Campus section styles */
+
+.items__campus {
+  flex-basis: 32%;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.campus__image {
+  width: 100%;
+  display: block;
+}
+
+.campus__layer {
+  padding-top: 1rem;
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background 0.5s, color 0.5s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.campus__layer:hover {
+  background: rgba(226, 0, 0, 0.6);
+}
+
+.layer__heading {
+  width: 100%;
+  color: var(--white);
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  transition: bottom 0.5s, opacity 0.5s;
+}
+
+.campus__layer:hover .layer__heading {
+  bottom: 50%;
+  opacity: 1;
+}
+
+/* Testimonials section styles */
+
+.items__testimonial--user {
+  flex-basis: 44%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  background: var(--light-gray);
+  padding: 1.5rem;
+  cursor: pointer;
+  display: flex;
+}
+
+.testimonial--user__image {
+  height: 3rem;
+  margin-right: 2rem;
+  border-radius: 50%;
+}
+
+.information__review {
+  color: var(--red);
+}
+
+/* Call to action section styles */
+
+.main__cta {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/banner2.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.9rem;
+  padding: 8rem 0;
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+.cta__heading {
+  margin-bottom: 3rem;
+}
